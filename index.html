@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saveurs de Saison</title>
+
+<style>
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    color: #2e2e2e;
+}
+
+header {
+    background: linear-gradient(to right, #4CAF50, #66bb6a);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  header h1 {
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.3em;
+    max-width: 900px;
+    margin: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.season {
+    margin-bottom: 80px;
+}
+
+.season h2 {
+    font-size: 2.6em;
+    border-bottom: 5px solid #4CAF50;
+    padding-bottom: 10px;
+}
+
+.category {
+    margin-top: 40px;
+  }
+
+.category h3 {
+    font-size: 2em;
+    color: #4CAF50;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 10px 18px rgba(0,0,0,0.12);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 18px;
+  
+.details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    background: #f1f8e9;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.details.open {
+    max-height: 2000px;
+    padding-bottom: 15px;
+}
+
+footer {
+    background: #ddd;
+  
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🍽️ Saveurs de Saison</h1>
+<p>Découvrez nos recettes complètes et détaillées pour chaque saison 🌿 avec des entrées, des plats et desserts à suivre pas à pas.</p>
+</header>
+
+<div class="container">
+<!-- ================= PRINTEMPS ================= -->
+<div class="season">
+<h2>🌸 Printemps</h2>
+  
+<!-- Entrées -->
+<div class="category">
+<h3>🥗 Entrées</h3>
+<div class="gallery">
+  
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?spring-salad">
+<div class="card-content">
+<h4>Salade de légumes frais</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>2 tomates</li>
+<li>1 concombre</li>
+<li>5 radis</li>
+<li>1 cuillère à soupe d'huile d'olive</li>
+<li>Sel et poivre</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Laver soigneusement tous les légumes.</li>
+<li>Couper les tomates et le concombre en dés.</li>
+<li>Émincer les radis finement.</li>
+<li>Mélanger tous les légumes dans un saladier.</li>
+<li>Ajouter l’huile d’olive, le sel et le poivre.</li>
+<li>Mélanger délicatement et servir frais.</li>
+</ol>
+</div>
+</div>
+</div>
+
+ <div class="card">
+<img src="https://source.unsplash.com/600x400/?asparagus-salad">
+<div class="card-content">
+<h4>Asperges vinaigrette</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>500 g d’asperges vertes</li>
+<li>1 cuillère à café de moutarde</li>
+<li>2 cuillères à soupe de vinaigre</li>
+<li>3 cuillères à soupe d’huile d’olive</li>
+<li>Sel et poivre</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Éplucher les asperges et couper les extrémités dures.</li>
+<li>Cuire les asperges à la vapeur 8-10 minutes jusqu’à tendreté.</li>
+<li>Préparer la vinaigrette : mélanger moutarde, vinaigre et huile d’olive.</li>
+<li>Disposer les asperges sur un plat et napper de vinaigrette.</li>
+<li>Servir tiède ou froid.</li>
+</ol>
+</div>
+</div>
+</div>
+
+  <div class="card">
+<img src="https://source.unsplash.com/600x400/?spring-rolls">
+<div class="card-content">
+<h4>Rouleaux de printemps aux légumes</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>6 feuilles de riz</li>
+<li>1 carotte</li>
+<li>1/2 concombre</li>
+<li>Feuilles de laitue</li>
+<li>Quelques pousses de soja</li>
+<li>Sauce soja ou sauce aux cacahuètes</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Éplucher et couper les légumes en fines lamelles.</li>
+<li>Tremper une feuille de riz dans l’eau tiède jusqu’à ramollissement.</li>
+<li>Disposer les légumes et feuilles de laitue au centre.</li>
+<li>Rouler la feuille de riz en serrant bien les légumes à l’intérieur.</li>
+<li>Répéter pour toutes les feuilles de riz.</li>
+<li>Servir avec la sauce de votre choix.</li>
+</ol>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Plats -->
+<div class="category">
+<h3>🍝 Plats</h3>
+<div class="gallery">
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?spring-pasta">
+<div class="card-content">
+<h4>Pâtes aux légumes verts</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>200 g de pâtes</li>
+<li>1 courgette</li>
+<li>100 g de petits pois</li>
+<li>2 cuillères à soupe de crème</li>
+<li>Sel et poivre</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Cuire les pâtes al dente.</li>
+<li>Faire revenir la courgette coupée en dés dans un peu d’huile.</li>
+<li>Ajouter les petits pois et cuire 5 minutes.</li>
+<li>Incorporer la crème et assaisonner.</li>
+<li>Mélanger les pâtes avec les légumes.</li>
+<li>Servir chaud.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?spring-quiche">
+<div class="card-content">
+<h4>Quiche aux légumes de printemps</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>1 pâte brisée</li>
+<li>3 œufs</li>
+<li>150 ml de crème</li>
+<li>Légumes verts (asperges, petits pois, épinards)</li>
+<li>Sel, poivre</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Préchauffer le four à 180°C.</li>
+<li>Étaler la pâte dans un moule à tarte.</li>
+<li>Mélanger les œufs et la crème, assaisonner.</li>
+<li>Disposer les légumes sur la pâte.</li>
+<li>Verser l’appareil œufs-crème par-dessus.</li>
+<li>Cuire 35-40 minutes jusqu’à ce que la quiche soit dorée.</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?spring-curry">
+<div class="card-content">
+<h4>Curry de légumes printaniers</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>1 courgette</li>
+<li>1 poivron</li>
+<li>100 g de petits pois</li>
+<li>1 oignon</li>
+<li>200 ml de lait de coco</li>
+<li>Pâte de curry, sel</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Émincer l’oignon et le faire revenir dans un peu d’huile.</li>
+<li>Ajouter les légumes coupés en dés et cuire 5 minutes.</li>
+<li>Ajouter le lait de coco et la pâte de curry.</li>
+<li>Laisser mijoter 10 minutes jusqu’à ce que les légumes soient tendres.</li>
+<li>Assaisonner et servir chaud avec du riz.</li>
+</ol>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Desserts -->
+<div class="category">
+<h3>🍰 Desserts</h3>
+<div class="gallery">
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?strawberries-dessert">
+<div class="card-content">
+<h4>Fraises au sucre et citron</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>500 g de fraises</li>
+<li>2 cuillères à soupe de sucre</li>
+<li>1 cuillère à café de jus de citron</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Laver et équeuter les fraises.</li>
+<li>Couper les fraises en morceaux.</li>
+<li>Ajouter le sucre et le jus de citron.</li>
+<li>Mélanger délicatement.</li>
+<li>Laisser reposer 15 minutes au frais.</li>
+<li>Servir bien frais.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?yogurt-dessert">
+<div class="card-content">
+<h4>Verrines au fromage blanc et miel</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>200 g de fromage blanc</li>
+<li>2 cuillères à soupe de miel</li>
+<li>Fruits frais (framboises, myrtilles)</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Répartir le fromage blanc dans des verrines.</li>
+<li>Ajouter le miel par-dessus.</li>
+<li>Décorer avec les fruits frais.</li>
+<li>Servir immédiatement ou réserver au frais.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?rhubarb-dessert">
+<div class="card-content">
+<h4>Crumble à la rhubarbe</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>400 g de rhubarbe</li>
+<li>100 g de farine</li>
+<li>80 g de sucre</li>
+<li>80 g de beurre</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Préchauffer le four à 180°C.</li>
+<li>Couper la rhubarbe en morceaux et la disposer dans un plat à gratin.</li>
+<li>Mélanger la farine, le sucre et le beurre pour obtenir une pâte sableuse.</li>
+<li>Répartir la pâte sur la rhubarbe.</li>
+<li>Cuire 25-30 minutes jusqu’à doré.</li>
+<li>Servir tiède, éventuellement avec crème ou glace.</li>
+</ol>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<!-- ================= ÉTÉ ================= -->
+<div class="season">
+<h2>☀️ Été</h2>
+
+<!-- Entrées -->
+<div class="category">
+<h3>🥗 Entrées</h3>
+<div class="gallery">
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?gazpacho">
+<div class="card-content">
+<h4>Gaspacho</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>500 g de tomates</li>
+<li>1 poivron rouge</li>
+<li>1 concombre</li>
+<li>2 cuillères à soupe d'huile d'olive</li>
+<li>1 cuillère à soupe de vinaigre</li>
+<li>Sel et poivre</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Laver et couper tous les légumes.</li>
+<li>Mettre les légumes dans un blender et mixer jusqu'à obtenir un mélange lisse.</li>
+<li>Ajouter l'huile d'olive, le vinaigre, le sel et le poivre. Mixer à nouveau.</li>
+<li>Goûter et ajuster l'assaisonnement si nécessaire.</li>
+<li>Réserver au frais au moins 2 heures avant de servir.</li>
+<li>Servir frais avec un filet d'huile d'olive et quelques herbes fraîches.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?caprese-salad">
+<div class="card-content">
+<h4>Salade Caprese</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>2 tomates bien mûres</li>
+<li>1 boule de mozzarella</li>
+<li>Feuilles de basilic frais</li>
+<li>Huile d'olive</li>
+<li>Sel et poivre</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Laver et couper les tomates en rondelles.</li>
+<li>Couper la mozzarella en rondelles fines.</li>
+<li>Disposer les rondelles de tomates et mozzarella en alternance sur une assiette.</li>
+<li>Ajouter les feuilles de basilic entre les rondelles.</li>
+<li>Arroser d'huile d'olive, saler et poivrer.</li>
+<li>Servir immédiatement ou réfrigérer 30 min avant dégustation.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?melon-prosciutto">
+<div class="card-content">
+<h4>Melon au jambon cru</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>1 melon</li>
+<li>6 tranches de jambon cru</li>
+<li>Poivre du moulin</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Couper le melon en deux et retirer les graines.</li>
+<li>Couper le melon en tranches.</li>
+<li>Enrouler chaque tranche d’une moitié de tranche de jambon cru.</li>
+<li>Disposer sur un plat, poivrer légèrement.</li>
+<li>Servir frais.</li>
+</ol>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Plats -->
+<div class="category">
+<h3>🍝 Plats</h3>
+<div class="gallery">
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?grilled-fish">
+<div class="card-content">
+<h4>Poisson grillé aux herbes</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>2 filets de poisson blanc (cabillaud, dorade…)</li>
+<li>1 citron</li>
+<li>Herbes fraîches (thym, persil)</li>
+<li>Huile d'olive, sel et poivre</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Préchauffer le grill ou le barbecue.</li>
+<li>Assaisonner les filets de poisson avec sel, poivre et herbes.</li>
+<li>Badigeonner légèrement d'huile d'olive.</li>
+<li>Griller les filets 4-5 min de chaque côté selon l'épaisseur.</li>
+<li>Servir avec un filet de jus de citron et des légumes grillés.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?pasta-salad">
+<div class="card-content">
+<h4>Pâtes froides aux légumes</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>200 g de pâtes (fusilli ou penne)</li>
+<li>1 poivron rouge</li>
+<li>1 courgette</li>
+<li>1 petite carotte</li>
+<li>2 cuillères à soupe d'huile d'olive</li>
+<li>Sel et poivre</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Cuire les pâtes al dente, puis rincer à l'eau froide pour les refroidir.</li>
+<li>Couper tous les légumes en petits dés.</li>
+<li>Faire revenir les légumes 5 minutes à la poêle avec un peu d'huile d'olive.</li>
+<li>Mélanger les pâtes avec les légumes.</li>
+<li>Assaisonner avec sel, poivre et un filet d'huile d'olive.</li>
+<li>Réserver au frais avant de servir.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?grilled-chicken-summer">
+<div class="card-content">
+<h4>Brochettes de poulet marinées</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>300 g de blanc de poulet</li>
+<li>2 cuillères à soupe de sauce soja</li>
+<li>1 cuillère à soupe de miel</li>
+<li>1 gousse d’ail hachée</li>
+<li>Poivre</li>
+<li>Brochettes en bois</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Couper le poulet en cubes.</li>
+<li>Préparer la marinade : mélanger sauce soja, miel, ail et poivre.</li>
+<li>Mettre le poulet dans la marinade et laisser reposer 30 min.</li>
+<li>Enfiler les morceaux de poulet sur les brochettes.</li>
+<li>Griller sur barbecue ou poêle 10-12 minutes en retournant régulièrement.</li>
+<li>Servir chaud avec salade ou légumes grillés.</li>
+</ol>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Desserts -->
+<div class="category">
+<h3>🍰 Desserts</h3>
+<div class="gallery">
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?fruit-salad">
+<div class="card-content">
+<h4>Salade de fruits frais</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>Fruits de saison (melon, fraises, framboises, kiwi)</li>
+<li>Jus d’un demi-citron</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Laver et couper les fruits en morceaux.</li>
+<li>Mélanger dans un saladier avec le jus de citron.</li>
+<li>Réserver 30 minutes au frais.</li>
+<li>Servir frais dans des bols ou verrines.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?ice-cream">
+<div class="card-content">
+<h4>Glace maison aux fruits rouges</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>250 ml de crème liquide entière</li>
+<li>150 g de fruits rouges (frais ou surgelés)</li>
+<li>50 g de sucre</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Mixer les fruits rouges avec le sucre jusqu’à obtenir une purée lisse.</li>
+<li>Monter la crème en chantilly ferme.</li>
+<li>Incorporer délicatement la purée de fruits à la chantilly.</li>
+<li>Verser dans un récipient et congeler 3-4 heures.</li>
+<li>Remuer toutes les 30 minutes pour obtenir une texture crémeuse.</li>
+<li>Servir bien frais.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?popsicles-fruit">
+<div class="card-content">
+<h4>Sucettes glacées aux fruits</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>200 ml de jus de fruits naturel</li>
+<li>Fruits coupés en petits morceaux</li>
+<li>Moules à glace</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Remplir les moules avec le jus de fruits.</li>
+<li>Ajouter des morceaux de fruits à l’intérieur.</li>
+<li>Insérer les bâtonnets et congeler au moins 4 heures.</li>
+<li>Démouler et déguster bien froid.</li>
+</ol>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<!-- ================= AUTOMNE ================= -->
+<div class="season">
+<h2>🍂 Automne</h2>
+
+<!-- Entrées -->
+<div class="category">
+<h3>🥗 Entrées</h3>
+<div class="gallery">
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?pumpkin-soup">
+<div class="card-content">
+<h4>Velouté de potiron</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>500 g de potiron</li>
+<li>1 pomme de terre</li>
+<li>1 oignon</li>
+<li>500 ml de bouillon de légumes</li>
+<li>Crème fraîche, sel, poivre</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Éplucher et couper le potiron et la pomme de terre en cubes.</li>
+<li>Émincer l'oignon et le faire revenir dans une casserole avec un peu d’huile.</li>
+<li>Ajouter le potiron et la pomme de terre, puis le bouillon.</li>
+<li>Cuire 20 minutes jusqu'à ce que les légumes soient tendres.</li>
+<li>Mixer le tout pour obtenir un velouté lisse.</li>
+<li>Ajouter la crème, assaisonner et servir chaud.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?mushroom-soup">
+<div class="card-content">
+<h4>Soupe de champignons</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>400 g de champignons de Paris</li>
+<li>1 oignon</li>
+<li>500 ml de bouillon de légumes</li>
+<li>Crème fraîche, sel, poivre</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Émincer les champignons et l’oignon.</li>
+<li>Faire revenir l’oignon jusqu’à ce qu’il soit translucide, ajouter les champignons.</li>
+<li>Verser le bouillon et cuire 15 minutes.</li>
+<li>Mixer, ajouter la crème et assaisonner selon votre goût.</li>
+<li>Servir chaud avec un peu de persil frais.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?apple-salad">
+<div class="card-content">
+<h4>Salade de pommes et noix</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>2 pommes</li>
+<li>50 g de noix</li>
+<li>1 cuillère à soupe de miel</li>
+<li>1 cuillère à soupe de yaourt nature</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Laver et couper les pommes en dés.</li>
+<li>Concasser les noix.</li>
+<li>Mélanger le yaourt et le miel pour préparer la sauce.</li>
+<li>Ajouter les pommes et les noix, bien mélanger.</li>
+<li>Servir frais.</li>
+</ol>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Plats -->
+<div class="category">
+<h3>🍝 Plats</h3>
+<div class="gallery">
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?risotto-mushroom">
+<div class="card-content">
+<h4>Risotto aux champignons</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>200 g de riz arborio</li>
+<li>300 g de champignons</li>
+<li>1 oignon</li>
+<li>750 ml de bouillon de légumes</li>
+<li>50 g de parmesan râpé</li>
+<li>30 g de beurre, sel, poivre</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Émincer les champignons et l'oignon.</li>
+<li>Faire revenir l'oignon avec un peu de beurre, ajouter les champignons.</li>
+<li>Ajouter le riz et remuer jusqu'à ce qu'il devienne translucide.</li>
+<li>Verser le bouillon chaud progressivement en remuant constamment.</li>
+<li>Cuire jusqu’à absorption complète du bouillon et tendreté du riz (18-20 min).</li>
+<li>Ajouter le parmesan, rectifier l’assaisonnement et servir chaud.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?pumpkin-pasta">
+<div class="card-content">
+<h4>Pâtes au potiron et lardons</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>200 g de pâtes</li>
+<li>300 g de potiron</li>
+<li>100 g de lardons</li>
+<li>1 oignon</li>
+<li>Crème fraîche, sel, poivre</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Cuire les pâtes selon les indications du paquet.</li>
+<li>Émincer l’oignon et faire revenir avec les lardons.</li>
+<li>Ajouter le potiron coupé en cubes et cuire 10 minutes.</li>
+<li>Ajouter la crème, saler, poivrer et mélanger avec les pâtes cuites.</li>
+<li>Servir chaud avec un peu de parmesan râpé.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?roast-chicken">
+<div class="card-content">
+<h4>Poulet rôti aux légumes d’automne</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>1 poulet entier</li>
+<li>Carottes, panais, courge</li>
+<li>2 gousses d’ail</li>
+<li>Herbes de Provence, sel, poivre</li>
+<li>Huile d’olive</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Préchauffer le four à 200°C.</li>
+<li>Placer le poulet dans un plat et frotter avec huile, sel, poivre et herbes.</li>
+<li>Couper les légumes en morceaux et les disposer autour du poulet.</li>
+<li>Ajouter l’ail écrasé.</li>
+<li>Cuire 1 heure 15 min, en arrosant régulièrement.</li>
+<li>Vérifier la cuisson et servir chaud avec les légumes rôtis.</li>
+</ol>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Desserts -->
+<div class="category">
+<h3>🍰 Desserts</h3>
+<div class="gallery">
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?apple-pie">
+<div class="card-content">
+<h4>Tarte aux pommes</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>1 pâte brisée</li>
+<li>4 pommes</li>
+<li>50 g de sucre</li>
+<li>20 g de beurre</li>
+<li>1 cuillère à café de cannelle</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Préchauffer le four à 180°C.</li>
+<li>Éplucher, évider et couper les pommes en fines tranches.</li>
+<li>Étaler la pâte dans un moule à tarte.</li>
+<li>Disposer les pommes sur la pâte en rosace.</li>
+<li>Parsemer de sucre, beurre et cannelle.</li>
+<li>Cuire 30-35 minutes jusqu’à doré.</li>
+<li>Laisser tiédir avant de servir.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?pumpkin-pie">
+<div class="card-content">
+<h4>Flan au potiron</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>400 g de potiron</li>
+<li>3 œufs</li>
+<li>150 ml de lait</li>
+<li>50 g de sucre</li>
+<li>1 cuillère à café de cannelle</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Préchauffer le four à 180°C.</li>
+<li>Cuire le potiron et le réduire en purée.</li>
+<li>Battre les œufs avec le sucre, ajouter le lait et la cannelle.</li>
+<li>Incorporer la purée de potiron.</li>
+<li>Verser dans un moule et cuire 35-40 minutes.</li>
+<li>Laisser refroidir avant de servir.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?pear-dessert">
+<div class="card-content">
+<h4>Poires pochées au vin rouge</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>4 poires</li>
+<li>500 ml de vin rouge</li>
+<li>100 g de sucre</li>
+<li>1 bâton de cannelle</li>
+<li>1 gousse de vanille</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Éplucher les poires en laissant la queue.</li>
+<li>Faire chauffer le vin avec le sucre, la cannelle et la vanille.</li>
+<li>Plonger les poires dans le vin et cuire 20-25 minutes jusqu’à tendres.</li>
+<li>Retirer les poires et laisser réduire le vin pour obtenir un sirop.</li>
+<li>Servir les poires nappées du sirop.</li>
+</ol>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<!-- ================= HIVER ================= -->
+<div class="season">
+<h2>❄️ Hiver</h2>
+
+<!-- Entrées -->
+<div class="category">
+<h3>🥗 Entrées</h3>
+<div class="gallery">
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?french-onion-soup">
+<div class="card-content">
+<h4>Soupe à l’oignon gratinée</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>4 gros oignons</li>
+<li>50 g de beurre</li>
+<li>1 litre de bouillon de bœuf ou légumes</li>
+<li>Sel, poivre</li>
+<li>Gruyère râpé</li>
+<li>Tranches de pain</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Émincer les oignons et les faire revenir doucement dans le beurre jusqu’à ce qu’ils soient dorés.</li>
+<li>Ajouter le bouillon et laisser mijoter 20 minutes.</li>
+<li>Préchauffer le four à 200°C.</li>
+<li>Verser la soupe dans des bols allant au four, déposer une tranche de pain dessus et parsemer de gruyère râpé.</li>
+<li>Gratiner au four 10 minutes jusqu’à ce que le fromage soit doré.</li>
+<li>Servir bien chaud.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?beetroot-salad">
+<div class="card-content">
+<h4>Salade betterave et chèvre</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>2 betteraves cuites</li>
+<li>100 g de fromage de chèvre frais</li>
+<li>Salade verte</li>
+<li>Huile d’olive, vinaigre balsamique, sel, poivre</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Couper les betteraves en dés.</li>
+<li>Disposer la salade dans une assiette.</li>
+<li>Ajouter les dés de betteraves et des morceaux de chèvre.</li>
+<li>Assaisonner avec huile, vinaigre, sel et poivre.</li>
+<li>Servir frais.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?carrot-soup">
+<div class="card-content">
+<h4>Velouté de carottes au gingembre</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>500 g de carottes</li>
+<li>1 oignon</li>
+<li>1 morceau de gingembre frais (2 cm)</li>
+<li>500 ml de bouillon de légumes</li>
+<li>Crème fraîche, sel, poivre</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Éplucher et couper les carottes en rondelles.</li>
+<li>Émincer l’oignon et le faire revenir dans une casserole.</li>
+<li>Ajouter les carottes, le bouillon et le gingembre râpé.</li>
+<li>Cuire 20 minutes jusqu’à tendreté.</li>
+<li>Mixer pour obtenir un velouté lisse.</li>
+<li>Ajouter la crème, assaisonner et servir chaud.</li>
+</ol>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Plats -->
+<div class="category">
+<h3>🍝 Plats</h3>
+<div class="gallery">
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?beef-stew">
+<div class="card-content">
+<h4>Bœuf bourguignon</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>800 g de bœuf à braiser</li>
+<li>200 g de lardons</li>
+<li>2 oignons</li>
+<li>2 carottes</li>
+<li>500 ml de vin rouge</li>
+<li>500 ml de bouillon</li>
+<li>Thym, laurier, sel, poivre</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Couper le bœuf en cubes.</li>
+<li>Faire revenir les lardons et oignons, ajouter la viande pour la saisir.</li>
+<li>Ajouter les carottes coupées en rondelles, le vin, le bouillon et les herbes.</li>
+<li>Porter à ébullition, puis laisser mijoter 2 à 3 heures à feu doux.</li>
+<li>Rectifier l’assaisonnement et servir chaud avec pommes de terre ou pâtes.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?roast-vegetables">
+<div class="card-content">
+<h4>Gratin de légumes d’hiver</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>500 g de légumes (chou-fleur, brocoli, carottes, pommes de terre)</li>
+<li>150 ml de crème</li>
+<li>50 g de fromage râpé</li>
+<li>Sel, poivre</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Préchauffer le four à 180°C.</li>
+<li>Cuire les légumes à la vapeur 10-15 minutes.</li>
+<li>Disposer dans un plat à gratin.</li>
+<li>Mélanger la crème avec sel et poivre et verser sur les légumes.</li>
+<li>Parsemer de fromage râpé et cuire 20 minutes jusqu’à doré.</li>
+<li>Servir chaud.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?chicken-stew">
+<div class="card-content">
+<h4>Blanquette de poulet</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>600 g de blanc de poulet</li>
+<li>2 carottes</li>
+<li>1 oignon</li>
+<li>200 ml de crème</li>
+<li>500 ml de bouillon</li>
+<li>1 jaune d'œuf, sel, poivre</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Couper le poulet en morceaux.</li>
+<li>Émincer l’oignon et couper les carottes en rondelles.</li>
+<li>Faire revenir le poulet et les légumes légèrement dans une cocotte.</li>
+<li>Ajouter le bouillon et laisser mijoter 30 minutes.</li>
+<li>Mélanger le jaune d’œuf avec la crème et incorporer doucement dans la sauce hors du feu.</li>
+<li>Rectifier l’assaisonnement et servir chaud.</li>
+</ol>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Desserts -->
+<div class="category">
+<h3>🍰 Desserts</h3>
+<div class="gallery">
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?chocolate-cake">
+<div class="card-content">
+<h4>Moelleux au chocolat</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>200 g de chocolat noir</li>
+<li>100 g de beurre</li>
+<li>150 g de sucre</li>
+<li>4 œufs</li>
+<li>50 g de farine</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Préchauffer le four à 180°C.</li>
+<li>Faire fondre le chocolat et le beurre au bain-marie.</li>
+<li>Ajouter le sucre, puis les œufs un à un.</li>
+<li>Incorporer la farine et mélanger doucement.</li>
+<li>Verser dans un moule beurré et cuire 20-25 minutes.</li>
+<li>Laisser tiédir avant de démouler et servir.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?apple-crumble">
+<div class="card-content">
+<h4>Crumble aux pommes</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>4 pommes</li>
+<li>100 g de farine</li>
+<li>80 g de sucre</li>
+<li>80 g de beurre</li>
+<li>1 cuillère à café de cannelle</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Préchauffer le four à 180°C.</li>
+<li>Éplucher et couper les pommes en dés.</li>
+<li>Disposer les pommes dans un plat à gratin.</li>
+<li>Mélanger farine, sucre, cannelle et beurre pour obtenir une pâte sableuse.</li>
+<li>Recouvrir les pommes de cette pâte.</li>
+<li>Cuire 25-30 minutes jusqu’à doré.</li>
+<li>Servir tiède, éventuellement avec de la crème ou glace vanille.</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/600x400/?poached-pear">
+<div class="card-content">
+<h4>Poires pochées au vin rouge</h4>
+<button onclick="toggle(this)">Voir la recette</button>
+<div class="details">
+<h5>Ingrédients</h5>
+<ul>
+<li>4 poires</li>
+<li>500 ml de vin rouge</li>
+<li>100 g de sucre</li>
+<li>1 bâton de cannelle</li>
+<li>1 gousse de vanille</li>
+</ul>
+<h5>Préparation</h5>
+<ol>
+<li>Éplucher les poires en laissant la queue.</li>
+<li>Faire chauffer le vin avec le sucre, la cannelle et la vanille.</li>
+<li>Plonger les poires dans le vin et cuire 20-25 minutes jusqu’à tendres.</li>
+<li>Retirer les poires et laisser réduire le vin pour obtenir un sirop.</li>
+<li>Servir les poires nappées du sirop.</li>
+</ol>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<footer>
+<p>© 2025 – Saveurs de Saison</p>
+</footer>
+
+<script>
+function toggle(button) {
+    document.querySelectorAll('.details.open').forEach(d => {
+        if (d !== button.nextElementSibling) {
+            d.classList.remove('open');
+        }
+    });
+    button.nextElementSibling.classList.toggle('open');
+}
+</script>
+
+</body>
+</html>
